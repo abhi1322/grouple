@@ -44,7 +44,7 @@ function Menu({ orientation }: MenuProps) {
             )
         case "mobile":
             return (
-                <div className="flex flex-col mt-10">
+                <div className="flex flex-col gap-2 mt-10 bg-transparent  border-themeGray bg-clip-padding backdrop-blur__safari backdrop-filter  backdrop-blur-3xl  ">
                     {GROUPLE_CONSTANTS.landingPageMenu.map((menu) => (
                         <Link
                             key={menu.id}
@@ -55,8 +55,8 @@ function Menu({ orientation }: MenuProps) {
                             className={cn(
                                 "rounded-xl flex gap-2 py-3 px-4 items-center",
                                 section === menu.path
-                                    ? "bg-[#09090b] border-[#27272A"
-                                    : "",
+                                    ? "bg-[#27272A] border-[#27272A]"
+                                    : "bg-transparent",
                             )}
                         >
                             {menu.icon}
