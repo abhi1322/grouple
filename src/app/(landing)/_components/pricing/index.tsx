@@ -15,12 +15,12 @@ const PricingSection = (props: Props) => {
         >
             <BackdropGradient className="w-8/12 h-full opacity-40 flex flex-col items-center">
                 <GradientText
-                    className="capitalize text-center text-4xl font-semibold"
+                    className="capitalize text-left md:text-center text-4xl font-semibold"
                     element="H2"
                 >
                     Pricing Plans That fit you right
                 </GradientText>
-                <p className="text-sm md:text-center text-left text-muted-foreground">
+                <p className="mt-3 text-sm md:text-center text-left text-muted-foreground">
                     Grouple is a vibrant online community platform that connects
                     people with similar interests, cultivate meaningful
                     relationships and passions.
