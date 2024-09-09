@@ -1,11 +1,11 @@
-import React from 'react'
+"use client"
 
 type Props = {}
 
 function SignUpPage({}: Props) {
-  return (
-    <div>SignUp</div>
-  )
+
+
+    return <div>SignUp</div>
 }
 
 export default SignUpPage
