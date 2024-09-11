@@ -1,12 +1,14 @@
+import { onSignUpUser } from "@/actions/auth"
+import { SignUpSchema } from "@/components/forms/sign-up/schema"
 import { useSignIn, useSignUp } from "@clerk/nextjs"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useMutation } from "@tanstack/react-query"
 import { useRouter } from "next/navigation"
+import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { toast } from "sonner"
 import { z } from "zod"
-import { SignInSchema } from "./schema"
-import { useState } from "react"
+import { SignInSchema } from "../../../components/forms/sign-in/schema"
 
 export const useAuthSignIn = () => {
     const { isLoaded, setActive, signIn } = useSignIn()
@@ -74,7 +76,6 @@ export const useAuthSignIn = () => {
         errors,
     }
 }
-
 
 export const useAuthSignUp = () => {
     const { setActive, isLoaded, signUp } = useSignUp()
