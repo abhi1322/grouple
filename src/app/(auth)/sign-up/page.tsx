@@ -1,4 +1,3 @@
-
 type Props = {}
 
 function SignUpPage({}: Props) {
